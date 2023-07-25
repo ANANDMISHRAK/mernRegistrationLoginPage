@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn-Register Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="page">
+       <div class="welcome">
+           <h2>Logo</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ?</p>
+           <button class="login_btn">Login</button>
+           <button class="register_btn">Register</button>
+        </div>
+
+        <div class="register">
+            <form action="/index" method="POST">
+                <h2>Register your Account</h2>
+                <input type="text" class="reg-input" placeholder="Username" name="username">
+                <input type="email" placeholder="Email" class="reg-input" name="email">
+                <input type="number" placeholder="Mobile No" class="reg-input" name="mobile">
+                <input type="password" placeholder="password" class="reg-input" name="password">
+                <input type="password" placeholder="conform password" class="reg-input" name="conformpassword">
+                <input type="submit" value="REGISTER" class="reg-btn">
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="/login" method="POST">
+                <h2>Login to your Account</h2>
+                <input type="email" class="log-input" placeholder="Email" name="Lemail">
+                <input type="password" class="log-input" placeholder="Password" name="Lpassword">
+                <input type="submit" value="LOGIN" class="log-btn">
+
+                <a href="#" class="forg-pass">Forget Password?</a>
+            </form>
+        </div>
+   </div>
+   
+    <script src="js/main.js"> </script>
+</body>
+</html>
